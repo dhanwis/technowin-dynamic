@@ -1,0 +1,237 @@
+{% extends "user_app/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+
+    <!-- page title start -->
+    <div class="breadcrumb-area bg-cover" style="background-image: url('./assets/img/bg/7.png');">
+        <div class="container">
+            <div class="breadcrumb-inner">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2 class="page-title">Windows</h2>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <ul class="page-list">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li>Windows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page title end -->
+
+    <!-- project area start -->
+    <div class="project-area bg-relative" style="padding-top: 30px;">
+        <div class="container">
+            <!-- <nav class="text-center">
+                <div class="nav nav-tabs project-nav-tab d-inline-flex mb-5" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-tabs1-tab" data-bs-toggle="tab" data-bs-target="#nav-tabs1" type="button" role="tab" aria-controls="nav-tabs1" aria-selected="true">View All</button>
+                    <button class="nav-link" id="nav-tabs2-tab" data-bs-toggle="tab" data-bs-target="#nav-tabs2" type="button" role="tab" aria-controls="nav-tabs2" aria-selected="false">Window</button>
+                    <button class="nav-link" id="nav-tabs3-tab" data-bs-toggle="tab" data-bs-target="#nav-tabs3" type="button" role="tab" aria-controls="nav-tabs3" aria-selected="false">windows</button>
+                </div>
+            </nav> -->
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-tabs1" role="tabpanel" aria-labelledby="nav-tabs1-tab">
+                    <div class="team-area bg-relative pd-bottom-90">
+                        <div class="container">
+                            <div class="row">
+                                {% for window in windows %}
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="single-team-inner text-center">
+                                            <div class="thumb">
+                                                <img src="{{ window.image.url }}" alt="img">
+                                                
+                                            </div>
+                                            <div class="details">
+                                                <h5><a href="#">2 Track 2 panel</a></h5>
+                                                <p>Maximum Size: 6' Height x 6' Width</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-tabs2" role="tabpanel" aria-labelledby="nav-tabs2-tab">
+                    <div class="team-area bg-relative pd-bottom-90">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">2 Track 2 panel</a></h5>
+                                            <p>Maximum Size: 6' Height x 6' Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">Casement</a></h5>
+                                            <p>Maximum Size: 4.6' Height x 4' Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">Top Hung</a></h5>
+                                            <p>Maximum Size: 4' Height x 4' Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">2 Track 2 panel</a></h5>
+                                            <p>Maximum Size: 6' Height x 6' Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">Casement</a></h5>
+                                            <p>Maximum Size: 4.6' Height x 4' Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">Top Hung</a></h5>
+                                            <p>Maximum Size: 4' Height x 4’ Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-tabs3" role="tabpanel" aria-labelledby="nav-tabs3-tab">
+                    <div class="team-area bg-relative pd-bottom-90">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">2 Track 2 panel</a></h5>
+                                            <p>Maximum Size: 6' Height x 6' Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">Casement</a></h5>
+                                            <p>Maximum Size: 4.6' Height x 4' Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">Top Hung</a></h5>
+                                            <p>Maximum Size: 4' Height x 4' Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">2 Track 2 panel</a></h5>
+                                            <p>Maximum Size: 6' Height x 6' Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">Casement</a></h5>
+                                            <p>Maximum Size: 4.6' Height x 4' Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="single-team-inner text-center">
+                                        <div class="thumb">
+                                            <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
+                                            
+                                        </div>
+                                        <div class="details">
+                                            <h5><a href="#">Top Hung</a></h5>
+                                            <p>Maximum Size: 4' Height x 4’ Width</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- project area end -->
+  
+    {% include 'user_app/components/footer.html' %}
+
+
+    {% endblock content %}

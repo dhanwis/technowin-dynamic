@@ -1,0 +1,244 @@
+/* ------------------------------------------------------------------------------
+
+  Template Name: Archiko. 
+  Description: Archiko. - Architecture HTML Template
+  Author: Murren
+  Author URI: http://themeforest.net/user/paul_tf
+  Version: 1.0
+  
+  1.  Global
+
+      1.1 General
+      1.2 Typography
+      1.3 Fields
+      1.4 Buttons
+      1.5 Icons
+      1.6 Loader
+      1.7 Content styles
+
+  2.  Header 
+
+      2.1 Navbar
+      2.2 Nav Desctop
+      2.3 Nav Mobile
+      2.4 Navbar Affix
+      
+
+  3.  Main
+
+      3.1 Slider
+
+  4.  Portfolio
+
+      5.1 Magnific popup
+      5.2 Portfolio Details
+      
+  5.  Team
+  6.  Clients
+  7.  News
+  8.  Banner
+  9.  Footer
+  10.  Modal
+  11. Responsive styles
+
+      11.1 Min width: 768px
+      11.2 Min width 992px
+      11.3 Min width 1200px 
+
+    
+    
+/*-------------------------------------------------------------------------------
+ 1. Global
+-------------------------------------------------------------------------------*/
+
+
+
+/* 1.1 General */
+
+
+
+/* @import url('bootstrap.min.css'); */
+@import url('font-awesome.min.css');
+@import url('ionicons.min.css');
+@import url('linearicons.css');
+@import url('magnific-popup.css');
+@import url('owl.carousel.css');
+@import url('owl.transitions.css');
+@import url('settings.css');
+@import url('layers.css');
+@import url('navigation.css');
+
+
+
+
+/*-------------------------------------------------------------------------------
+  3. Main
+-------------------------------------------------------------------------------*/
+
+
+
+.main{
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  color: #fff;
+  background-color: #222222;
+}
+
+.main h1{
+  color: #fff;
+}
+
+.mouse-helper{
+  z-index: 1;
+  text-align: center;
+}
+
+.mouse-helper .ion-mouse{
+  background:url(../img/mouse.png);
+  background-size:cover;
+  width: 0.6635em;
+  height: 0.9695em;
+  margin-top: 0.7em;
+}
+
+.mouse-helper .ion-mouse:before{
+  display: none;
+}
+
+.mouse-helper span{
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+
+.mouse-helper{
+  color: #fff;
+  position: absolute;
+  left:50%;
+  bottom:3em;
+  font-size: 0.7em;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+
+/* 3.1 Slider */
+
+
+
+.rev_slider{
+  color: #fff;
+  min-height: 320px;
+}
+
+.rev_slider .btn{
+  -webkit-transition: background-color .3s ease-out!important;
+          transition: background-color .3s ease-out!important;
+}
+
+.tp-caption{
+  padding: 0 20px;
+  text-align: center;
+}
+
+.slider-title{
+  font-weight: 700;
+}
+
+.slider-text{
+  text-align: center;
+}
+
+.arrow-left,
+.arrow-right{
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.arrow-left{
+  left: 3em;
+}
+
+.arrow-right{
+  right:  3em;
+}
+
+.arrow-left:before,
+.arrow-right:before{
+  content:'';
+  display: inline-block;
+  vertical-align: middle;
+  background-color: transparent;
+  font-size: 1em;
+  line-height: 1;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.arrow-left:before,
+.arrow-right:before{
+  content:'';
+  display: inline-block;
+  vertical-align: middle;
+  width:2.5625em;
+  height: 1.5em;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.arrow-left:before{
+  background: url(../img/img-icon/prev.png) 0 0 no-repeat;
+  background-size: cover;
+  margin-right: 0.82em;
+}
+
+.arrow-right:before{
+  background: url(../img/img-icon/next.png) 0 0 no-repeat;
+  background-size: cover;
+  margin-left: 0.72em;
+}
+
+.text-parallax-content{
+  overflow: hidden;
+  color: #000;
+  mix-blend-mode:lighten;
+  -ms-mix-blend-mode:lighten;
+}
+
+.tp-shape-mask{
+  -webkit-transform: none!important;
+  -ms-transform: none!important;
+  -o-transform: none!important;
+  transform: none!important;
+}
+
+.object-meta{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.4em!important;
+  text-transform: uppercase;
+}
+
+.object-meta i{
+  font-size: 1.5em;
+  vertical-align: middle;
+  color:#c5a47e;
+  margin-right: 0.5em;
+}
+
+.object-meta i.text-white{
+  color: #fff;
+}
+

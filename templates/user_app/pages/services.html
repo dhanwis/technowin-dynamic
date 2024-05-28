@@ -1,0 +1,163 @@
+{% extends "user_app/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+
+    <!-- page title start -->
+    <div class="breadcrumb-area bg-cover" style="background-image: url('./assets/img/bg/7.png');">
+        <div class="container">
+            <div class="breadcrumb-inner">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2 class="page-title">Service</h2>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <ul class="page-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li>Service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page title end -->
+
+    <!-- service area start -->
+    <div class="service-area bg-relative" style="padding-top: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-work-process-inner h-20">
+                        <div class="thumb mb-4">
+                            <img src="{% static 'user_app/mine/img/services/collision.png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5 class="mb-3">Friction Hinges</h5>
+                            <p class="content mb-3" style="text-align: justify;">Maintenance is important but straightforward. Keep the friction stay track free from dirt and grime and keep the hinge mechanism clean... </p>
+                            <a class="read-more-text"  data-modal="modal-1">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-work-process-inner h-20">
+                        <div class="thumb mb-3">
+                            <img src="{% static 'user_app/mine/img/services/escape.png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5 class="mb-3">Egress Friction Hinges</h5>
+                            <p class="content mb-3" style="text-align: justify;">In order to facilitate a maximum clear opening, egress hinges may be fitted. In most cases this will be an upstairs window and allows the...</p>
+                            <a class="read-more-text"  data-modal="modal-2">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-work-process-inner h-20">
+                        <div class="thumb mb-3">
+                            <img src="{% static 'user_app/mine/img/services/fan-(1).png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5 class="mb-3">Ventilation Control</h5>
+                            <p class="content mb-3" style="text-align: justify;">Windows can be fitted with a trickle ventilation unit, located at the top of the frame. This is designed so that you can control ventilation...</p> 
+                            <a class="read-more-text"  data-modal="modal-3">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-work-process-inner h-20">
+                        <div class="thumb mb-3">
+                            <img src="{% static 'user_app/mine/img/services/window-(1).png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5 class="mb-3">Window Operation</h5>
+                            <p class="content mb-3" style="text-align: justify;">The window is opened for ventilation by unlocking the snail cam(s) located on the top face of the bottom sash using the key provided...</p>  
+                            <a class="read-more-text"  data-modal="modal-4">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-work-process-inner h-20">
+                        <div class="thumb mb-4">
+                            <img src="{% static 'user_app/mine/img/services/collision.png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5 class="mb-3">Door Locking Mechanisms</h5>
+                            <p class="content mb-3" style="text-align: justify;">Doors can be equipped with a hook or cam lock mechanism. In some cases there may be a split spindle lock – this means you cannot enter...</p> 
+                            <a class="read-more-text"  data-modal="modal-5">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-work-process-inner h-20">
+                        <div class="thumb mb-3">
+                            <img src="{% static 'user_app/mine/img/services/unlocked.png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5 class="mb-3">Unlocking</h5>
+                            <p class="content mb-3" style="text-align: justify;">Insert the key into the cylinder lock and disengage the deadbolt by turning one complete revolution. Depress the handle and open the...</p> 
+                            <a class="read-more-text"  data-modal="modal-6">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service area end -->
+
+
+    <!-- Modal Structures -->
+<div id="modal-1" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Friction Hinges</h3>
+        <p>Maintenance is important but straightforward. Keep the friction stay track free from dirt and grime and keep the hinge mechanism clean. Lubricate the metal parts regularly with light oil, concentrating on the pivot points. Friction can be increased or decreased by adjustment of the turning screw. Turn in a clockwise direction to increase friction. Take care not to over tighten.</p>
+    </div>
+</div>
+<div id="modal-2" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Egress Friction Hinges</h3>
+        <p>In order to facilitate a maximum clear opening, egress hinges may be fitted. In most cases this will be an upstairs window and allows the window to be opened to 90°. Some egress hinges combine the opening facility with an easy clean system, whereby the vent can be slid sideways to allow external cleaning to be carried out from inside. To utilise the easy clean facility, open the window normally, then press and hold down the button on both hinges to release the restrictor hinge. Slide the sash across to allow egress.</p>
+    </div>
+</div>
+
+<div id="modal-3" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Ventilation Control</h3>
+        <p>Windows can be fitted with a trickle ventilation unit, located at the top of the frame. This is designed so that you can control ventilation and minimise any build up of condensation. Simply open or close the ventilator by pushing the finger recess to the left or right. No maintenance is required.</p>
+    </div>
+</div>
+
+<div id="modal-4" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Window Operation</h3>
+        <p>The window is opened for ventilation by unlocking the snail cam(s) located on the top face of the bottom sash using the key provided (if key locking versions are fitted). Turn the cam(s) until released from the keep(s). The bottom sash may now be slid upwards and/or the top sash may be slid downwards. To close the window slide both sashes fully closed and re-engage the snail cam(s).</p>
+    </div>
+</div>
+
+<div id="modal-5" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Door Locking Mechanisms</h3>
+        <p>Doors can be equipped with a hook or cam lock mechanism. In some cases there may be a split spindle lock – this means you cannot enter the house without using a key to open the door.</p>
+    </div>
+</div>
+
+<div id="modal-6" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Unlocking</h3>
+        <p>Insert the key into the cylinder lock and disengage the deadbolt by turning one complete revolution. Depress the handle and open the door. Where a split spindle is fitted in addition, after you have depressed the handle, turn the key a further quarter revolution to release the latch.</p>
+    </div>
+</div>
+<!-- More modals here -->
+
+{% include 'user_app/components/footer.html' %}
+
+
+{% endblock content %}

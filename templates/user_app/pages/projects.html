@@ -1,0 +1,61 @@
+{% extends "user_app/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+
+    <!-- page title start -->
+    <div class="breadcrumb-area bg-cover" style="background-image: url('./assets/img/bg/7.png');">
+        <div class="container">
+            <div class="breadcrumb-inner">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2 class="page-title">Projects</h2>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <ul class="page-list">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li>Projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page title end -->
+
+    <!-- blog area start -->
+    <div class="blog-area pd-bottom-120" style="padding-top: 30px;">
+        <div class="team-area bg-relative pd-bottom-90">
+            <div class="container">
+                <div class="row">
+                    {% for project in projects %}
+                        <div class="col-lg-4 col-md-6">
+                            <div class="item">
+                                <div class="single-team-inner border-radius-5 bg-white">
+                                    <div class="thumb bg-gray border-radius-5">
+                                        <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                        
+                                    </div>
+                                    <div class="details">
+                                        <h5><a href="#">Project</a></h5>
+                                        <p style="color: #bd9160;">Kannur, Kerala</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog area end -->
+
+   
+
+{% include 'user_app/components/footer.html' %}
+
+
+{% endblock content %}

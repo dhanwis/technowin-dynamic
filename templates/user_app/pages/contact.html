@@ -1,0 +1,64 @@
+{% extends "user_app/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+
+    <!-- contact list start -->
+    <div class="contact-page-list" style="margin-top: 30px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="media single-contact-list">
+                        <div class="media-left">
+                            <img src="{% static 'user_app/mine/img/contact/15.jpg' %}" alt="img" width="50px">
+                        </div>
+                        <div class="media-body">
+                            <h5>Location</h5>
+                            <h6>Kadoor, Mayyil, Kerala - 670601 </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="media single-contact-list">
+                        <div class="media-left">
+                            <img src="{% static 'user_app/mine/img/contact/14.jpg' %}" alt="img" width="50px">
+                        </div>
+                        <div class="media-body">
+                            <h5>Email</h5>
+                            <h6>info@technowinupvc.com</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="media single-contact-list">
+                        <div class="media-left">
+                            <img src="{% static 'user_app/mine/img/contact/contact.jpeg" alt="img" width="50px">
+                        </div>
+                        <div class="media-body">
+                            <h5>Contacts us</h5>
+                            <h6>04602 080 367</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact list start -->
+
+    <!-- map start -->
+    <div class="contact-g-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29208.601361499546!2d90.3598076!3d23.7803374!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1589109092857!5m2!1sen!2sbd"></iframe>
+    </div> 
+    <!-- map end -->
+
+    <div style="margin-top: 5rem;">
+        <br>
+        <br>
+        <br>
+    </div>
+    
+{% include 'user_app/components/footer.html' %}
+
+
+{% endblock content %}

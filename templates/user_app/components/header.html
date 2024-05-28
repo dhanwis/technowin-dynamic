@@ -1,0 +1,119 @@
+{% load static %}
+
+<!-- <div class="navbar-top pe-3 bg-gray d-lg-block d-none">
+    <div class="container custom-container">
+        <div class="row">
+            <div class="col-lg-8">
+                <ul>
+                    <li><i class="fa fa-envelope"></i> info@technowinupvc.com</li>
+                    <li><i class="fa fa-map-marker-alt"></i> Kadoor, Mayyil, Kerala - 670601</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <ul class="topbar-right">
+                    <li>Follow On: </li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- navbar start -->
+<nav class="navbar navbar-area navbar-area-2 navbar-expand-lg bg-white">
+    <div class="container nav-container custom-container">
+        <div class="responsive-mobile-menu">
+            <button class="menu toggle-btn d-block d-lg-none" data-target="#itech_main_menu" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-left"></span>
+                <span class="icon-right"></span>
+            </button>
+        </div>
+        <div class="logo">
+            <a href="{% url 'home' %}"><img src="{% static 'user_app/mine/img/techno-win-logo.png' %}" alt="img"></a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="itech_main_menu">
+            <ul class="navbar-nav menu-open text-lg-center ps-lg-5">
+                <li class="">
+                    <a href="{% url 'home' %}" class="
+                    {% if current_page == 'home' %}
+                        active-mine
+                    {% endif %}
+                    ">Home</a>
+                   
+                </li>
+                <li class="">
+                    <a href="{% url 'about' %}"
+                    class="
+                    {% if current_page == 'about' %}
+                        active-mine
+                    {% endif %}"
+                    >About</a>
+                    
+                </li>
+                <li class="">
+                    <a href="{% url 'doors' %}"
+                    class="
+                    {% if current_page == 'doors' %}
+                        active-mine
+                    {% endif %}"
+                    >Doors</a>
+                    
+                </li>
+                <li class="">
+                    <a href="{% url 'windows' %}"
+                    class="
+                    {% if current_page == 'windows' %}
+                        active-mine
+                    {% endif %}"
+                    >Windows</a>
+                    
+                </li>
+                <li class="">
+                    <a href="{% url 'projects' %}"
+                    class="
+                    {% if current_page == 'projects' %}
+                        active-mine
+                    {% endif %}"
+                    >Projects</a>
+                    
+                </li>
+                
+                <li class="">
+                    <a href="{% url 'services' %}"
+                    class="
+                    {% if current_page == 'services' %}
+                        active-mine
+                    {% endif %}"
+                    >Services</a>
+                    
+                </li>
+                
+                <li><a href="{%  url 'contact' %}"
+                    class="
+                    {% if current_page == 'contact' %}
+                        active-mine
+                    {% endif %}"
+                    >Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right-part nav-right-part-desktop d-lg-inline-flex align-item-center">
+            <a class="navbar-phone d-xl-inline-block d-none" href="tel:">
+                <span class="icon">
+                    <img src="{% static 'user_app/assets/img/icon/1.png' %}" alt="img">
+                </span>
+                <span>Need help?</span>
+                <h5>04602 080 367 </h5>
+            </a>
+            
+            <a class="btn btn-border-base" href="#">Get a quote <i class="fa fa-arrow-right"></i></a>
+        </div>
+    </div>
+</nav>
+<!-- navbar end -->

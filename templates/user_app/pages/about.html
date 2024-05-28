@@ -1,0 +1,151 @@
+{% extends "user_app/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+    
+
+    <!-- page title start -->
+    <div class="breadcrumb-area bg-cover" style="background-image: url('./assets/img/bg/7.png');">
+        <div class="container">
+            <div class="breadcrumb-inner">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2 class="page-title">About Us</h2>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <ul class="page-list">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page title end -->
+
+
+    <!-- about area start -->
+    <div class="about-area" style="padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="about-thumb-inner pe-xl-5 me-xl-5">
+                        <img class="animate-img-1 top_image_bounce" src="{% static 'user_app/mine/img/2-(1).png' %}" alt="img">
+                        <img class="animate-img-2 left_image_bounce" src="{% static 'user_app/mine/img/3.png' %}" alt="img">
+                        <img class="animate-img-3 top_image_bounce" src="{% static 'user_app/assets/img/banner/5.svg' %}" alt="img">
+                        <img class="main-img" src="{% static 'user_app/mine/img/abouttt.jpg' %}" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="section-title">
+                        <h6 class="sub-title">ABOUT US</h6>
+                        <h2 class="title">IT is a critical component of <span>modern</span> businesses</h2>
+                        <p class="content mb-4 mb-xl-5" style="text-align: justify;">Technowin uPVC windows & Doors is a Kerala (India)-based company specializing in the manufacturing and installation of uPVC windows and doors. The company has a leading position in the building and construction industry.
+
+                            Technowin brings you the best of international expertise and sophisticated technology in the wide range of uPVC quality windows and doors.
+                            
+                            Technowin has already built a solid reputation in the industry for the quality of its products. Our windows and doors are particularly suited to withstand harsh weather conditions and they are also very effective in blocking the ingress of noise, water, and dust.
+                            
+                            In recognition of the company's achievements, Technowin uPVC windows & Doors were chosen for the Crown Certificate Award for the best Fabricator Of Plastone uPVC Systems.
+                            
+                            Manufactured with the technical assistance of India’s Leading Brands Plastone, Oben, and WindSeal - Technowin products are the foremost in terms of quality and craftsmanship.
+                            
+                            Each Technowin product is custom-made by highly-skilled technicians in strict accordance with international quality standards. With over 600 profile designs, aesthetically appealing and technically appropriate solutions can be found in all products of Technowin
+                            
+                            Stringent quality checks endure that DIN & ISO standards are maintained and that the products offer lasting value and high levels of functional reliability and user comfort.
+                            
+                           </p>
+                        <!-- <div class="row">
+                            <div class="col-md-6">
+                                <div class="single-about-inner">
+                                    <div class="thumb mb-3">
+                                        <img src="{% static 'user_app/assets/img/icon/2.png' %}" alt="img">
+                                    </div>
+                                    <div class="details">
+                                        <h5>Our Ambition</h5>
+                                        <p>Lorem is Ipsum is simply is design iomyi is text Lorem Ipsum is simply is our busi designer is our country.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-about-inner">
+                                    <div class="thumb mb-3">
+                                        <img src="{% static 'user_app/assets/img/icon/3.png' %}" alt="img">
+                                    </div>
+                                    <div class="details">
+                                        <h5>Our Ambition</h5>
+                                        <p>Lorem is Ipsum is simply is design iomyi is text Lorem Ipsum is simply is our busi designer is our country.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about area end -->
+
+
+
+    <!-- service area start -->
+    <div class="service-area bg-relative pd-top-120 pd-bottom-90">
+        <div class="container">
+            <div class="row justify-content-center" >
+                <!-- <div class="col-xl-8 col-lg-10" data-aos="fade-up">
+                    <div class="section-title text-center">
+                        <h6 class="sub-title">CREATIVE SERVICES</h6>
+                        <h2 class="title">Best Destination To Get Your Own <span>Application</span> Developed</h2>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-service-inner style-3">
+                        <div class="thumb">
+                            <img src="{% static 'user_app/mine/img/vision.png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5><a href="service-details.html">Vision</a></h5>
+                            <p class="text-justify">Occupy the minds of the customers by being the most preferred uPVC manufacturer and supplier with offerings such as customized solutions, discernment, practical knowledge, product prowess and integrity.</p>
+                            <!-- <a class="read-more-text" href="service-details.html">Touch More <i class="fa fa-plus"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-service-inner style-3">
+                        <div class="thumb">
+                            <img src="{% static 'user_app/mine/img/target.png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5><a href="service-details.html">Mission</a></h5>
+                            <p class="text-justify">Deliver top of the line products and tailored solutions through continuous innovations within the domain of uPVC technology and immense product knowledge for sustained profitability.</p>
+                            <!-- <a class="read-more-text" href="service-details.html">Touch More <i class="fa fa-plus"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-service-inner style-3">
+                        <div class="thumb">
+                            <img src="{% static 'user_app/mine/img/light-bulb.png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5><a href="service-details.html">Philosophy</a></h5>
+                            <p class="text-justify">Constantly, continually improve and innovate. Keep a positive impact on the communities we touch providing superior, efficient products and services which meet the ever-changing needs of our customers while continuing to strive for the highest professional excellence in the delivery of those products and services.
+
+                            </p>
+                            <!-- <a class="read-more-text" href="service-details.html">Touch More <i class="fa fa-plus"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service area end -->
+
+    {% include 'user_app/components/footer.html' %}
+
+
+    {% endblock content %}

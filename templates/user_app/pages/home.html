@@ -1,0 +1,814 @@
+{% extends "user_app/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'user_app/components/header.html' %}
+    
+
+    <!-- carousel -->
+
+    <main class="main" id="home">
+
+        <div class="arrow-left hidden-xs"></div>
+        <div class="arrow-right hidden-xs"></div>
+
+        <!-- Start revolution slider -->
+
+        <div class="rev_slider_wrapper">
+            <div id="rev_slider" class="rev_slider fullscreenbanner">
+                <ul>
+
+                    <!-- Slide 1 -->
+
+                    <li data-transition="incube-horizontal" data-masterspeed="1000" data-fsmasterspeed="1000">
+
+                        <!-- Main image-->
+
+                        <img src="{% static 'user_app/mine/img/carousel-1.jpg' %}" alt="" data-bgposition="center center"
+                            data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="7">
+
+                        <!-- Layer 1 -->
+
+                        <div class="tp-caption tp-shape tp-shape-mask tp-shapewrapper" data-x="center" data-hoffset=""
+                            data-y="left" data-voffset="" data-basealign="slide" data-width="['14000']"
+                            data-height="['14000']" data-transform_idle="o:1;"
+                            data-transform_in="opacity:0;s:1000;s:1000s:1000;e:Power3.easeInOut;"
+                            data-transform_out="opacity:0;s:1000;s:1000s:1000;e:Power3.easeInOut;" data-start="0"
+                            data-responsive_offset="on" style="background-color:rgba(10,10,10,0.5);"></div>
+
+                        <!-- Layer 2 -->
+
+                        <div class="slider-title tp-caption tp-resizeme" data-x="['center']" data-hoffset="['0']"
+                            data-y="['middle','middle','middle','middle']" data-textAlign="['center']"
+                            data-voffset="['-100']" data-fontsize="['100','70','60','50']"
+                            data-lineheight="['150','95','85']" data-height="none" data-whitespace="nowrap"
+                            data-transform_idle="o:1;"
+                            data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
+                            data-splitin="chars" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05" style="font-family: 'Playfair Display', serif; font-weight: 900;">
+                            Stop looking <br>at the walls,<br>look out the window
+
+                        </div>
+
+                        <!-- Layer 2 -->
+
+                        <div class="tp-caption tp-resizeme" data-x="['center']" data-hoffset="['-300', '-250']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['210']" data-fontsize="['14']"
+                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05">
+                            <div class="object-meta"><i class="text-white ion-ios-location-outline"></i> Kadoor, Mayyil
+                            </div>
+                        </div>
+
+                        <!-- Layer 3 -->
+
+                        <div class="tp-caption tp-resizeme" data-x="['center']" data-hoffset="['0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['210']" data-fontsize="['14']"
+                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2500"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05">
+                            <div class="object-meta"><i class="text-white ion-card"></i>  Kerala </div>
+                        </div>
+
+                        <!-- Layer 4 -->
+
+                        <div class="tp-caption tp-resizeme" data-x="['center']" data-hoffset="['300', '250']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['210']" data-fontsize="['14']"
+                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="3000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05">
+                            <div class="object-meta"><i class="text-white ion-android-expand"></i>670601 </div>
+                        </div>
+
+                        <!-- Layer 5 -->
+
+                        <div class="tp-caption tp-resizeme" data-x="left" data-y="bottom" data-hoffset="['40']"
+                            data-voffset="['40']" data-fontsize="['13']" data-basealign="slide"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-start="2000" data-responsive_offset="on"
+                            style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.480em; text-transform: uppercase;">
+                            techno win
+                        </div>
+
+                        <!-- Layer 5 -->
+
+                        <div class="tp-caption tp-resizeme" data-x="right" data-y="bottom" data-hoffset="['40']"
+                            data-voffset="['40']" data-fontsize="['13']" data-basealign="slide"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-start="2000" data-responsive_offset="on"
+                            style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.480em; text-transform: uppercase;">
+                            2024
+                        </div>
+
+                    </li>
+
+                    <li data-transition="incube-horizontal" data-masterspeed="1000" data-fsmasterspeed="1000">
+
+                        <!-- Main image-->
+
+                        <img src="{% static 'user_app/mine/img/carousel-3.jpg' %}" alt="" data-bgposition="center center"
+                            data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="7">
+
+                        <!-- Layer 1 -->
+
+                        <div class="tp-caption tp-shape tp-shape-mask tp-shapewrapper" data-x="center" data-hoffset=""
+                            data-y="left" data-voffset="" data-basealign="slide" data-width="['14000']"
+                            data-height="['14000']" data-transform_idle="o:1;"
+                            data-transform_in="opacity:0;s:1000;s:1000s:1000;e:Power3.easeInOut;"
+                            data-transform_out="opacity:0;s:1000;s:1000s:1000;e:Power3.easeInOut;" data-start="0"
+                            data-responsive_offset="on" style="background-color:rgba(10,10,10,0.5);"></div>
+
+                        <!-- Layer 2 -->
+
+                        <div class="slider-title tp-caption tp-resizeme" data-x="['center']" data-hoffset="['0']"
+                            data-y="['middle','middle','middle','middle']" data-textAlign="['center']"
+                            data-voffset="['-100']" data-fontsize="['100','70','60','50']"
+                            data-lineheight="['150','95','85']" data-height="none" data-whitespace="nowrap"
+                            data-transform_idle="o:1;"
+                            data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
+                            data-splitin="chars" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05" style="font-family: 'Playfair Display', serif; font-weight: 900;">
+                            The Futurist<br>Windows &<br>Doors
+
+                        </div>
+
+                        <!-- Layer 2 -->
+
+                        <div class="tp-caption tp-resizeme" data-x="['center']" data-hoffset="['-300', '-250']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['210']" data-fontsize="['14']"
+                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05">
+                            <div class="object-meta"><i class="text-white ion-ios-location-outline"></i> Kadoor, Mayyil
+                            </div>
+                        </div>
+
+                        <!-- Layer 3 -->
+
+                        <div class="tp-caption tp-resizeme" data-x="['center']" data-hoffset="['0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['210']" data-fontsize="['14']"
+                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="2500"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05">
+                            <div class="object-meta"><i class="text-white ion-card"></i>  Kerala </div>
+                        </div>
+
+                        <!-- Layer 4 -->
+
+                        <div class="tp-caption tp-resizeme" data-x="['center']" data-hoffset="['300','250']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['210']" data-fontsize="['14']"
+                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
+                            data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="3000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-elementdelay="0.05">
+                            <div class="object-meta"><i class="text-white ion-android-expand"></i> 670601 </div>
+                        </div>
+
+                        <!-- Layer 5 -->
+
+                        <div class="tp-caption tp-resizeme" data-x="left" data-y="bottom" data-hoffset="['40']"
+                            data-voffset="['40']" data-fontsize="['13']" data-basealign="slide"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-start="2000" data-responsive_offset="on"
+                            style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.480em; text-transform: uppercase;">
+                            techno win
+                        </div>
+
+                        <!-- Layer 5 -->
+
+                        <div class="tp-caption tp-resizeme" data-x="right" data-y="bottom" data-hoffset="['40']"
+                            data-voffset="['40']" data-fontsize="['13']" data-basealign="slide"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1000;e:Power3.easeInOut;"
+                            data-start="2000" data-responsive_offset="on"
+                            style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.480em; text-transform: uppercase;">
+                            2024
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mouse-helper">
+            <span>Scroll Down</span>
+            <!-- <i class="icon ion-mouse"></i> -->
+            <i class="bi bi-mouse" style="font-size: 20px;"></i>
+        </div>
+        
+    </main>
+    <!-- about area start -->
+    <div class="about-area pd-top-120 pd-bottom-40px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-thumb-inner p-xl-5 pt-4 wow animated fadeInLeft" data-wow-duration="1.5s"
+                        data-wow-delay="0.3s">
+                        <img class="animate-main-img" src="{% static 'user_app/mine/img/img-1.png' %}" alt="img">
+                        <img class="main-img " src="{% static 'user_app/mine/img/about-2.jpg' %}" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center wow animated fadeInRight" data-wow-duration="1.5s"
+                    data-wow-delay="0.3s">
+                    <div class="section-title mt-5 mt-lg-0">
+                        <h6 class="sub-title">ABOUT US</h6>
+                        <h2 class="title">A Trendy Doors for <span>Trendy</span> Home</h2>
+                        <p class="content mb-4 mb-xl-5 text-justify">Technowin uPVC windows & Doors is a Kerala (India)-based company
+                            specializing in the manufacturing and installation of uPVC windows and doors. The company
+                            has a leading
+                            position in the building and construction industry.
+
+                            Technowin brings you the best of international expertise and sophisticated technology in the
+                            wide range
+                            of uPVC quality windows and doors.
+
+                            Technowin has already built a solid reputation in the industry for the quality of its
+                            products. Our
+                            windows and doors are particularly suited to withstand harsh weather conditions and they are
+                            also very
+                            effective in blocking the ingress of noise, water, and dust.</p>
+
+                        <a class="btn btn-border-base" href="#">View More <i
+                                class="fa fa-plus"></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about area end -->
+
+
+    <!-- service-area start -->
+    <div class="service-area bg-cover pd-top-45px   " style="background-image: url('./assets/img/bg/3.png');">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="section-title text-center">
+                        <h6 class="sub-title">WHAT WE OFFER</h6>
+                        <!-- <h2 class="title">It <span>Service</span> Refers To The Provision Of Support</h2> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6" data-aos="zoom-in">
+                    <div class="single-work-process-inner">
+                        <div class="thumb mb-3">
+                            <img src="{% static 'user_app/mine/img/home/trophy.png' %}" alt="img" width="50px">
+                        </div>
+                        <div class="details">
+                            <h6 class="mb-3">Crown Certificate Award</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6" data-aos="zoom-in">
+                    <div class="single-work-process-inner">
+                        <div class="thumb mb-3">
+                            <img src="{% static 'user_app/mine/img/home/bulding.png' %}" alt="img" width="50px">
+                        </div>
+                        <div class="details">
+                            <h6 class="mb-3">Plastone, Oben, and WindSeal</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6" data-aos="zoom-in">
+                    <div class="single-work-process-inner">
+                        <div class="thumb mb-3">
+                            <img src="{% static 'user_app/mine/img/home/iso-symbol.png' %}" alt="img" width="50px">
+                        </div>
+                        <div class="details">
+                            <h6 class="mb-3">DIN & ISO standards</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6" data-aos="zoom-in">
+                    <div class="single-work-process-inner">
+                        <div class="thumb mb-3">
+                            <img src="{% static 'user_app/mine/img/home/earth.png' %}" alt="img" width="50px">
+                        </div>
+                        <div class="details">
+                            <h6 class="mb-3">International Expertise</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service-area end -->
+
+    <!-- faq area start -->
+    <div class="faq-area faq-area-margin-top bg-cover pd-top-90 pd-bottom-110" style="background-image: url('./assets/img/bg/3.png');">
+        <div class="container">
+            <div class="row pd-top-120">
+                <div class="col-xl-5 col-lg-6 col-md-8 order-lg-last" data-aos="flip-right" data-aos-duration="1000"> 
+                    <div class="about-thumb-inner pt-lg-3">
+                        <img class="main-img" src="{% static 'user_app/mine/img/whychooseus-1.jpg' %}" alt="img">
+                        <img class="animate-img-bottom-right top_image_bounce" src="{% static 'user_app/mine/img/client-1.png' %}" alt="img">
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="section-title mb-0 mt-4 mt-lg-0">
+                        <h6 class="sub-title">Why choose us</h6>
+                        <h2 class="title">Your Premier Destination for <span>UPVC</span> Products</h2>
+                        <p class="content">At Technowin, we pride ourselves on being more than just a UPVC product selling company. We're your partners in creating spaces that are not just beautiful, but also durable, energy-efficient, and environmentally friendly. Here's why you should choose us</p>
+                    </div>
+                    <div class="accordion accordion-inner style-2 accordion-icon-left mt-3" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Unparalleled Quality:
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We understand that quality is non-negotiable when it comes to your home or business. That's why each of our UPVC products undergoes rigorous quality control measures to ensure they meet the highest standards. From windows to doors, every Technowin product is crafted with precision and built to last.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Extensive Product Range:
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Whether you're looking for stylish windows to enhance your home's aesthetic appeal or robust doors to enhance security, we have you covered. Our extensive product range includes a variety of UPVC windows, doors, frames, and accessories, all designed to cater to your specific needs and preferences.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Innovation and Technology:
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    At Technowin, we stay at the forefront of innovation and technology to bring you the latest advancements in UPVC products. From energy-efficient designs to smart features, we continuously strive to enhance the performance and functionality of our products, ensuring that you get the best value for your investment.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faq area end -->
+
+
+    <!-- service area start -->
+    <div class="service-area bg-relative pd-top-100">
+        <img class="position-bottom-left top_image_bounce" src="{% static 'user_app/assets/img/icon/4.png' %}" alt="img">
+        <div class="container">
+            <div class="section-title text-center">
+                <h6 class="sub-title">Our SERVICES</h6>
+                <h2 class="title">How to maintain your <span>UPVC</span> windows and doors</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-service-inner text-center">
+                        <div class="thumb">
+                            <img src="{% static 'user_app/mine/img/window.png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5><a href="services.html">Casement Windows</a></h5>
+                            <p style="text-align: justify;">Be sure to wash down the PVC-u at least twice a year, with warm soapy water and wipe it dry.  Regularly clean the glass with a clear liquid spray glass cleaner.
+
+                                Never Paint PVC-U window frames or use paste and cream cleaners which can be mildly abrasive. Never use any type of bleach.</p>
+                            <a class="btn btn-border-base" href="services.html">Touch More <i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-service-inner text-center">
+                        <div class="thumb">
+                            <img src="{% static 'user_app/mine/img/construction.png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5><a href="services.html">Tilt & Turn Mechanism</a></h5>
+                            <p style="text-align: justify;">Maintenance is important but straightforward. Keep the locking mechanism clean and free from dirt and grime. Lubricate all locking points and strikers regularly, with light oil to facilitate smooth running.</p>
+                            <a class="btn btn-border-base" href="services.html">Touch More <i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="single-service-inner text-center">
+                        <div class="thumb">
+                            <img src="{% static 'user_app/mine/img/fan.png' %}" alt="img" width="70px">
+                        </div>
+                        <div class="details">
+                            <h5><a href="services.html">Ventilation Control</a></h5>
+                            <p style="text-align: justify;">Windows can be fitted with a trickle ventilation unit, located at the top of the frame. This is designed so that you can control ventilation and minimise any build up of condensation. Simply open or close the ventilator by pushing the finger recess to the left or right.</p>
+                            <a class="btn btn-border-base" href="services.html">Touch More <i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service area end -->
+
+
+    <!-- blog-area start -->
+    <!-- <div class="blog-area pd-top-45px pd-bottom-60">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h6 class="sub-title">Our Projects</h6>
+                        <h2 class="title">Discover a World of Sustainable Alternatives</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-list style-2">
+                        <div class="thumb">
+                            <img src="{% static 'user_app/mine/img/room1.jpg' %}" alt="img">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-list style-2">
+                        <div class="thumb">
+                            <img src="{% static 'user_app/mine/img/room2.jpg' %}" alt="img">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-list style-2">
+                        <div class="thumb">
+                            <img src="{% static 'user_app/mine/img/room3.jpg' %}" alt="img">
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-end">
+                <a class="btn btn-border-base " href="#">View More <i
+                    class="fa fa-plus"></i></a>
+            </div>
+            
+        </div>
+    </div> -->
+    <!-- blog-area start -->
+
+
+    <!-- product area start -->
+    <div class="project-section pd-top-60">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h6 class="sub-title">Gallery Here</h6>
+                        <h2 class="title">Our <span>Products</span> Are Here</h2>
+                    </div>
+                </div>
+            </div>
+            <nav class="text-center">
+                <div class="nav nav-tabs project-nav-tab style-2 d-inline-flex mb-5" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-tabs1-tab" data-bs-toggle="tab" data-bs-target="#nav-tabs1" type="button" role="tab" aria-controls="nav-tabs1" aria-selected="true">Windows</button>
+                    <button class="nav-link" id="nav-tabs2-tab" data-bs-toggle="tab" data-bs-target="#nav-tabs2" type="button" role="tab" aria-controls="nav-tabs2" aria-selected="false">Doors</button>
+                    
+                </div>
+            </nav>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-tabs1" role="tabpanel" aria-labelledby="nav-tabs1-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">2 Track 2 panel</a></h5>
+                                    <p>Maximum Size: 6' Height x 6' Width</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Casement</a></h5>
+                                    <p>Maximum Size: 4.6' Height x 4' Width</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Top Hung</a></h5>
+                                    <p>Maximum Size: 4' Height x 4' Width</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">2 Track 2 panel</a></h5>
+                                    <p>Maximum Size: 6' Height x 6' Width</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Casement</a></h5>
+                                    <p>Maximum Size: 4.6' Height x 4' Width</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Top Hung</a></h5>
+                                    <p>Maximum Size: 4' Height x 4’ Width</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="d-flex justify-content-end">
+                            <a class="btn btn-border-base mb-3" href="projects.html">View More <i
+                                class="fa fa-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-tabs2" role="tabpanel" aria-labelledby="nav-tabs2-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">2 Track 2 panel</a></h5>
+                                    <p>Maximum Size: 6' Height x 6' Width</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Casement</a></h5>
+                                    <p>Maximum Size: 4.6' Height x 4' Width</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Top Hung</a></h5>
+                                    <p>Maximum Size: 4' Height x 4' Width</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">2 Track 2 panel</a></h5>
+                                    <p>Maximum Size: 6' Height x 6' Width</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Casement</a></h5>
+                                    <p>Maximum Size: 4.6' Height x 4' Width</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                            <div class="single-team-inner text-center">
+                                <div class="thumb">
+                                    <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Top Hung</a></h5>
+                                    <p>Maximum Size: 4' Height x 4’ Width</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-end">
+                            <a class="btn btn-border-base mb-3" href="projects.html">View More <i
+                                class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- products area start -->
+
+
+    <!-- project area start -->
+    <div class="project-section pd-top-60">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h6 class="sub-title">Gallery Here</h6>
+                        <h2 class="title">Latest <span>Project</span> Are Here</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="item" data-aos="fade-up">
+                        <div class="single-team-inner border-radius-5 bg-white">
+                            <div class="thumb bg-gray border-radius-5">
+                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                
+                            </div>
+                            <div class="details">
+                                <h5><a href="team-details.html">Project</a></h5>
+                                <p style="color: #bd9160;">Kannur, Kerala</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item" data-aos="fade-up">
+                        <div class="single-team-inner border-radius-5 bg-white">
+                            <div class="thumb bg-gray border-radius-5">
+                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                
+                            </div>
+                            <div class="details">
+                                <h5><a href="team-details.html">Project</a></h5>
+                                <p style="color: #bd9160;">Kannur, Kerala</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item" data-aos="fade-up">
+                        <div class="single-team-inner border-radius-5 bg-white">
+                            <div class="thumb bg-gray border-radius-5">
+                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                
+                            </div>
+                            <div class="details">
+                                <h5><a href="team-details.html">Project</a></h5>
+                                <p style="color: #bd9160;">Kannur, Kerala</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="item" data-aos="fade-up">
+                        <div class="single-team-inner border-radius-5 bg-white">
+                            <div class="thumb bg-gray border-radius-5">
+                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                
+                            </div>
+                            <div class="details">
+                                <h5><a href="team-details.html">Project</a></h5>
+                                <p style="color: #bd9160;" style="color: #bd9160;">Kannur, Kerala</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item" data-aos="fade-up">
+                        <div class="single-team-inner border-radius-5 bg-white">
+                            <div class="thumb bg-gray border-radius-5">
+                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                
+                            </div>
+                            <div class="details">
+                                <h5><a href="team-details.html">Project</a></h5>
+                                <p style="color: #bd9160;">Kannur, Kerala</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item" data-aos="fade-up">
+                        <div class="single-team-inner border-radius-5 bg-white">
+                            <div class="thumb bg-gray border-radius-5">
+                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                
+                            </div>
+                            <div class="details">
+                                <h5><a href="team-details.html">Project</a></h5>
+                                <p style="color: #bd9160;">Kannur, Kerala</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="d-flex justify-content-end">
+                <a class="btn btn-border-base mb-3" href="projects.html">View More <i
+                    class="fa fa-plus"></i></a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- project area start -->
+
+
+    {% include 'user_app/components/footer.html' %}
+
+
+    {% endblock content %}
