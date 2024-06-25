@@ -34,12 +34,12 @@
                             <div class="item">
                                 <div class="single-team-inner border-radius-5 bg-white">
                                     <div class="thumb bg-gray border-radius-5">
-                                        <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
+                                        <img src="{{ project.image.url }}" alt="img">
                                         
                                     </div>
                                     <div class="details">
-                                        <h5><a href="#">Project</a></h5>
-                                        <p style="color: #bd9160;">Kannur, Kerala</p>
+                                        <h5><a href="#">{{ project.head }}</a></h5>
+                                        <p style="color: #bd9160;">{{ project.description }}</p>
                                     </div>
                                 </div>
                             </div>

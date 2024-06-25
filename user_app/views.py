@@ -5,10 +5,14 @@ from admin_app.models import *
 
 def home(request):
     current_page = 'home'
-    
+    doors = Door.objects.all().order_by('-id')[:6]
+    windows = Window.objects.all().order_by('-id')[:6]
+    projects = Project.objects.all().order_by('-id')[:6]
     context = {
         'current_page': current_page,
-        
+        'doors': doors,
+        'windows': windows,
+        'projects' : projects
     }
     return render(request, 'user_app/pages/home.html', context)
 
@@ -27,7 +31,7 @@ def doors(request):
     doors = Door.objects.all()
     context = {
         'current_page': current_page,
-        'doors':doors
+        'doors': doors
     }
     return render(request, 'user_app/pages/doors.html', context)
 
@@ -37,7 +41,7 @@ def windows(request):
     windows = Window.objects.all()
     context = {
         'current_page': current_page,
-        'windows':windows
+        'windows' :windows
     }
     return render(request, 'user_app/pages/windows.html', context)
 
@@ -47,7 +51,7 @@ def projects(request):
     projects = Project.objects.all()
     context = {
         'current_page': current_page,
-        'projects' : projects
+        'projects': projects
     }
     return render(request, 'user_app/pages/projects.html', context)
 

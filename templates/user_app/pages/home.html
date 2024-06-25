@@ -525,168 +525,52 @@
             <div class="tab-pane fade show active" id="nav-tabs1" role="tabpanel" aria-labelledby="nav-tabs1-tab">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">2 Track 2 panel</a></h5>
-                                    <p>Maximum Size: 6' Height x 6' Width</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">Casement</a></h5>
-                                    <p>Maximum Size: 4.6' Height x 4' Width</p>
+                        {% for window in windows %}
+                            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                                <div class="single-team-inner text-center">
+                                    <div class="thumb">
+                                        <img src="{{ window.image.url }}" alt="img">
+                                        
+                                    </div>
+                                    <div class="details">
+                                        <h5><a href="#">{{ window.head }}</a></h5>
+                                        <p>{{ window.description }}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">Top Hung</a></h5>
-                                    <p>Maximum Size: 4' Height x 4' Width</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">2 Track 2 panel</a></h5>
-                                    <p>Maximum Size: 6' Height x 6' Width</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">Casement</a></h5>
-                                    <p>Maximum Size: 4.6' Height x 4' Width</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">Top Hung</a></h5>
-                                    <p>Maximum Size: 4' Height x 4’ Width</p>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                         
-
                         <div class="d-flex justify-content-end">
-                            <a class="btn btn-border-base mb-3" href="projects.html">View More <i
+                            <a class="btn btn-border-base mb-3" href="{% url 'windows' %}">View More <i
                                 class="fa fa-plus"></i></a>
                         </div>
-
+                        
                     </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="nav-tabs2" role="tabpanel" aria-labelledby="nav-tabs2-tab">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">2 Track 2 panel</a></h5>
-                                    <p>Maximum Size: 6' Height x 6' Width</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">Casement</a></h5>
-                                    <p>Maximum Size: 4.6' Height x 4' Width</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">Top Hung</a></h5>
-                                    <p>Maximum Size: 4' Height x 4' Width</p>
-                                </div>
-                            </div>
-                        </div>
+                        
 
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">2 Track 2 panel</a></h5>
-                                    <p>Maximum Size: 6' Height x 6' Width</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/2.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">Casement</a></h5>
-                                    <p>Maximum Size: 4.6' Height x 4' Width</p>
+                        {% for door in doors %}
+                            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                                <div class="single-team-inner text-center">
+                                    <div class="thumb">
+                                        <img src="{{ door.image.url }}" alt="img">
+                                        
+                                    </div>
+                                    <div class="details">
+                                        <h5><a href="#">{{ door.head }}</a></h5>
+                                        <p>{{ door.description }}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                            <div class="single-team-inner text-center">
-                                <div class="thumb">
-                                    <img src="{% static 'user_app/assets/img/team/3.png' %}" alt="img">
-                                    
-                                </div>
-                                <div class="details">
-                                    <h5><a href="team-details.html">Top Hung</a></h5>
-                                    <p>Maximum Size: 4' Height x 4’ Width</p>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
+                        
                         
                         <div class="d-flex justify-content-end">
-                            <a class="btn btn-border-base mb-3" href="projects.html">View More <i
+                            <a class="btn btn-border-base mb-3" href="{% url 'doors' %}">View More <i
                                 class="fa fa-plus"></i></a>
                         </div>
                     </div>
@@ -710,96 +594,28 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="item" data-aos="fade-up">
-                        <div class="single-team-inner border-radius-5 bg-white">
-                            <div class="thumb bg-gray border-radius-5">
-                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
-                                
-                            </div>
-                            <div class="details">
-                                <h5><a href="team-details.html">Project</a></h5>
-                                <p style="color: #bd9160;">Kannur, Kerala</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="item" data-aos="fade-up">
-                        <div class="single-team-inner border-radius-5 bg-white">
-                            <div class="thumb bg-gray border-radius-5">
-                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
-                                
-                            </div>
-                            <div class="details">
-                                <h5><a href="team-details.html">Project</a></h5>
-                                <p style="color: #bd9160;">Kannur, Kerala</p>
+                {% for project in projects %}
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item" data-aos="fade-up">
+                            <div class="single-team-inner border-radius-5 bg-white">
+                                <div class="thumb bg-gray border-radius-5">
+                                    <img src="{{ project.image.url }}" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="3">{{ project.head }}</a></h5>
+                                    <p style="color: #bd9160;">{{ project.description }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="item" data-aos="fade-up">
-                        <div class="single-team-inner border-radius-5 bg-white">
-                            <div class="thumb bg-gray border-radius-5">
-                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
-                                
-                            </div>
-                            <div class="details">
-                                <h5><a href="team-details.html">Project</a></h5>
-                                <p style="color: #bd9160;">Kannur, Kerala</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="item" data-aos="fade-up">
-                        <div class="single-team-inner border-radius-5 bg-white">
-                            <div class="thumb bg-gray border-radius-5">
-                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
-                                
-                            </div>
-                            <div class="details">
-                                <h5><a href="team-details.html">Project</a></h5>
-                                <p style="color: #bd9160;" style="color: #bd9160;">Kannur, Kerala</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="item" data-aos="fade-up">
-                        <div class="single-team-inner border-radius-5 bg-white">
-                            <div class="thumb bg-gray border-radius-5">
-                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
-                                
-                            </div>
-                            <div class="details">
-                                <h5><a href="team-details.html">Project</a></h5>
-                                <p style="color: #bd9160;">Kannur, Kerala</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="item" data-aos="fade-up">
-                        <div class="single-team-inner border-radius-5 bg-white">
-                            <div class="thumb bg-gray border-radius-5">
-                                <img src="{% static 'user_app/assets/img/team/1.png' %}" alt="img">
-                                
-                            </div>
-                            <div class="details">
-                                <h5><a href="team-details.html">Project</a></h5>
-                                <p style="color: #bd9160;">Kannur, Kerala</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
+                    
                 
 
             </div>
             <div class="d-flex justify-content-end">
-                <a class="btn btn-border-base mb-3" href="projects.html">View More <i
+                <a class="btn btn-border-base mb-3" href="{% url 'projects' %}">View More <i
                     class="fa fa-plus"></i></a>
             </div>
             
