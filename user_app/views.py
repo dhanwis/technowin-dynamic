@@ -5,9 +5,9 @@ from admin_app.models import *
 
 def home(request):
     current_page = 'home'
-    doors = Door.objects.all()
-    windows = Window.objects.all()
-    projects = Project.objects.all()
+    doors = Door.objects.all()[:6]
+    windows = Window.objects.all()[:6]
+    projects = Project.objects.all()[:6]
     context = {
         'current_page': current_page,
         'doors': doors,
